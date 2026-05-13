@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Brea Dolphin</title>
+  <meta name="description" content="Thoughts on design, development, and building things." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- NAV -->
+  <nav id="nav" class="scrolled">
+    <a href="index.html" class="nav-name">Brea Dolphin</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Work</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="page-hero-label">Writing</p>
+    <h1 class="page-hero-title">Blog</h1>
+    <p class="page-hero-sub">Thoughts on design, development, and the process of making things.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- BLOG POSTS -->
+  <div class="blog-page-content">
+    <div class="blog-grid">
+
+      <a href="#" class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-card-date">May 8, 2025</span>
+          <span class="blog-card-tag">Design</span>
+        </div>
+        <p class="blog-card-title">Why I deleted my design tokens and started over</p>
+        <p class="blog-card-excerpt">After six months of accumulating one-off values and edge cases, I hit a wall. Here's what I learned rebuilding from scratch with stricter constraints.</p>
+        <span class="blog-card-read">Read post ↗</span>
+      </a>
+
+      <a href="#" class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-card-date">Apr 21, 2025</span>
+          <span class="blog-card-tag">Process</span>
+        </div>
+        <p class="blog-card-title">The case for doing less, better</p>
+        <p class="blog-card-excerpt">Scope creep is the silent killer. A reflection on how constraints — self-imposed or otherwise — lead to sharper, more honest work.</p>
+        <span class="blog-card-read">Read post ↗</span>
+      </a>
+
+      <a href="#" class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-card-date">Mar 14, 2025</span>
+          <span class="blog-card-tag">Building</span>
+        </div>
+        <p class="blog-card-title">Building in public: three months in</p>
+        <p class="blog-card-excerpt">What I've shipped, what I've scrapped, and what I've learned from sharing the messy middle of building a product in the open.</p>
+        <span class="blog-card-read">Read post ↗</span>
+      </a>
+
+      <a href="#" class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-card-date">Feb 28, 2025</span>
+          <span class="blog-card-tag">Dev</span>
+        </div>
+        <p class="blog-card-title">TypeScript patterns I keep coming back to</p>
+        <p class="blog-card-excerpt">A living collection of type utilities and patterns that have quietly saved me hours across multiple projects.</p>
+        <span class="blog-card-read">Read post ↗</span>
+      </a>
+
+      <a href="#" class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-card-date">Jan 15, 2025</span>
+          <span class="blog-card-tag">Design</span>
+        </div>
+        <p class="blog-card-title">On typography: the decisions most people don't notice</p>
+        <p class="blog-card-excerpt">Type is invisible when it works. A walkthrough of the micro-decisions — size, weight, spacing — that make text feel right.</p>
+        <span class="blog-card-read">Read post ↗</span>
+      </a>
+
+      <a href="#" class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-card-date">Dec 3, 2024</span>
+          <span class="blog-card-tag">Reflection</span>
+        </div>
+        <p class="blog-card-title">2024: what I made, broke, and shipped</p>
+        <p class="blog-card-excerpt">An honest year-in-review covering the highs, the abandoned projects, and the one thing I'll do differently in 2025.</p>
+        <span class="blog-card-read">Read post ↗</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-copy">© 2025 Brea Dolphin</p>
+    <div class="footer-links">
+      <a href="#">Twitter</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
+  </script>
+
+</body>
+</html>
